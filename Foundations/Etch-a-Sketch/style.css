@@ -1,0 +1,25 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 50px;
+	width: 800px;
+	height: 400px;
+}
+
+.row,
+.column {
+	/* height: 20px;
+	width: 40px; */
+	background-color: gray;
+	/* border: #acacacfc solid thin; */
+	border: 1px #acacacfc solid;
+}
