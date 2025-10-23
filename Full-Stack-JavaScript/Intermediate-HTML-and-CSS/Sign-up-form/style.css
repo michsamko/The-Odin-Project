@@ -1,0 +1,215 @@
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 0 solid;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	min-height: 100vh;
+	height: 100%;
+	font-family: system-ui, sans-serif;
+	display: flex;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+p {
+	text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+@font-face {
+	font-family: OdinFont;
+	src: url(/Norse-Bold.otf);
+}
+
+h1 {
+	font-family: OdinFont;
+	font-size: 6rem;
+	color: #fff;
+}
+
+.left-side-page {
+	width: 40%;
+	background-image: url('/images/green-leaf.jpg');
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.right-side-page {
+	width: 100%;
+}
+
+.background-logo {
+	width: 100%;
+	height: 10.9375rem;
+	background: rgba(0, 0, 0, 0.5);
+	margin-top: 12.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	background-image: url('/images/odin-lined.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 76%;
+	width: 6.25rem;
+}
+
+.bottom-left-side-page {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 0.625rem;
+}
+
+.bottom-left-side-page p,
+a {
+	color: white;
+}
+
+.input {
+	border: 1px solid #e5e7eb;
+	border-radius: 0.25rem;
+	width: 16.25rem;
+	height: 1.875rem;
+	margin-bottom: 0.9375rem;
+	padding: 10px;
+}
+
+.input:focus {
+	/* box-shadow: 2px 3px 2px #888888; */
+	border: 1.5px solid #1d4ed8;
+	outline: none;
+	box-shadow: 1px 1px 5px #aaaaaa;
+}
+
+.header,
+.footer {
+	background-color: #f9fafb;
+}
+
+.sign-up {
+	color: #fff;
+	background-color: #596d48;
+	width: 14.375rem;
+	height: 3.125rem;
+	border-radius: 0.4375rem;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.sign-in {
+	color: #596d48;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.right-side-page {
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 39%;
+}
+.main {
+	height: 30%;
+	box-shadow: 0 10px 20px -5px rgba(115, 115, 115, 0.75);
+}
+
+.footer {
+	height: 31%;
+}
+
+.header-content {
+	margin-left: 3.125rem;
+	margin-bottom: 4.0625rem;
+}
+
+.header-content > h2:nth-child(2) {
+	margin-top: 2.1875rem;
+}
+
+.main > h2,
+.content-input {
+	color: #1f2937;
+}
+
+.main > h2 {
+	margin-top: 1.5625rem;
+	margin-left: 3.125rem;
+}
+
+.content-input {
+	font-size: 0.75rem;
+	text-transform: uppercase;
+}
+
+.user-data {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4.6875rem;
+	margin-left: 3.125rem;
+	margin-top: 0.9375rem;
+}
+
+.footer-content {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2.1875rem;
+	margin-left: 3.125rem;
+	gap: 2.625rem;
+}
