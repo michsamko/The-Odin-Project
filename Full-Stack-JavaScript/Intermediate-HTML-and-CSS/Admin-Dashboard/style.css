@@ -13,6 +13,12 @@ body {
 	-webkit-font-smoothing: antialiased;
 	min-height: 100vh;
 	height: 100%;
+	display: grid;
+	grid-template-areas:
+		'sidebar header'
+		'sidebar main'
+		'sidebar main'
+        'sidebar main';
 }
 
 img,
