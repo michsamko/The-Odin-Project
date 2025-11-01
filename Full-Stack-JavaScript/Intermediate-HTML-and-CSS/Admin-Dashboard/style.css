@@ -153,10 +153,14 @@ main {
 	display: grid;
 	grid-template-areas:
 		'mine-projects announcements'
-		'mine-projects .'
+		'mine-projects announcements'
 		'mine-projects trending';
 	grid-template-columns: 3fr 1fr;
 	grid-template-rows: 1fr 1fr;
+}
+
+main a {
+	color: black;
 }
 
 .project {
@@ -168,10 +172,6 @@ main {
 	flex-direction: column;
 	justify-content: space-between;
 	box-shadow: 0px 5px 10px -5px #aaa;
-}
-
-.container-announcement {
-	border: 1px solid red;
 }
 
 .mine-projects {
@@ -192,12 +192,6 @@ main {
 	grid-area: title-projects;
 }
 
-.project-bottom {
-	display: flex;
-	justify-content: end;
-	gap: 30px;
-}
-
 .project-top p {
 	color: #636363;
 }
@@ -213,9 +207,30 @@ main {
 
 .announcements {
 	grid-area: announcements;
-	margin: 40px 20px;
+	margin: 40px 20px 0px 0px;
+}
+
+.container-announcement {
+	background-color: #fff;
+	margin-top: 20px;
+	border-radius: 10px;
+	padding: 40px 30px;
+}
+
+.container-announcement p {
+	color: #636363;
+}
+
+.announcement {
+	margin-bottom: 20px;
+}
+
+.bottom-border {
+	border-bottom: 1px solid gray;
+	margin-top: 20px;
 }
 
 .trending {
 	grid-area: trending;
+	margin-bottom: 40px;
 }
